@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experience the best of fine dining at Umamia. Explore our menu, meet our team, and indulge in a culinary adventure like no other..">
+    <meta name="title" content="Umamia Restarant | food">
+    <meta property="og:type" content="website ">
+    <meta property="og:title" content="Umamia Restarant">
+    <meta name="keywords" content="Experience the best of fine dining at Umamia. Explore our menu, meet our team, and indulge in a culinary adventure like no other. ">
+    <meta name="author" content="sumit sarkar">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Umamia Restarant">
+
+    <!-- font awesome cdn   --------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <!-- favicon section   --------------------------------->
+    <link rel="shortcut icon" href="https://framerusercontent.com/images/QQqKiRubQVqOI1MqmWoe5CbBCU.png">
+
+    <!-- this is Css section   --------------------------------->
+     <link rel="stylesheet" href="cssFile/style.css">
+     <link rel="stylesheet" href="cssFile/responsive.css">
+   
+
+    <!-- this is google font section   --------------------------------->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+   
+   
+    <!-- remix icon link   --------------------------------->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"rel="stylesheet"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/7.4.0/esm/ionicons.min.js" integrity="sha512-heZj7rPbZHWyOEhE34vsJkzj2DKK2mZ9D3jjMkXQJ0uMGu/m5iOty+le26NL1eFZ5+qa4XBYcflwYwITwCWufw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- ---swiper js ---------------------------------->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+
+    <!-- ---scroll reveal js ---------------------------------->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <title>Umamia Restarant</title>
+   
+</head>
+<body>
+  <!-- /* ----------------------------------------
+ ============= header start here  ==============
+ -------------------------------------------*/  -->
+ <header>
+
+  <div class="head">
+    <nav>
+      <a href="menu.html" >menu</a>
+      <a href="reserve.html" class="active" >reserve</a>
+
+      <div class="nav-social">
+        <a href="https://www.instagram.com/"><i class="ri-instagram-fill"></i></a>
+        <a href="https://wa.me/+8801914738110"><i class="ri-whatsapp-fill"></i></a>
+      </div>
+
+      <a href="about.html" >about</a>
+      <a href="contact.html" >contact</a>
+    </nav>
+  </div>
+  <div class="head-text">
+    <a href="index.html"><img src="assests/logo.png" alt=""></a>
+    <p>Book your table today and immerse yourself in an unforgettable dining experience.</p>
+  </div>
+
+  <div id="reserve-layout">
+   <img src="https://framerusercontent.com/images/nGkdefd2L23QcxHMppjCNxebpY.jpg?scale-down-to=2048" alt="">
+
+   <div class="card">
+    <span>Make a Reservation</span>
+    <div class="form-group">
+      <label for="date">Date</label>
+      <input type="date" id="date" value="">
+    </div>
+    <div class="form-group">
+      <label for="time">Time</label>
+      <input type="time" id="time" value="">
+    </div>
+    <div class="form-group">
+      <label for="people">Party Size</label>
+      <select id="people">
+        <option value="1">1 person</option>
+        <option value="2" selected>2 people</option>
+        <option value="3">3 people</option>
+        <option value="4">4 people</option>
+        <option value="6">6 people</option>
+        <option value="8">8 people</option>
+        <option value="10">10 people</option>
+        <option value="12">12 people</option>
+        <option value="Full">reserve full</option>
+      </select>
+    </div>
+    <button class="btn" onclick="findTable()">Find a Table</button>
+    <div class="open-dot">
+      <div class="dot"></div>
+      OpenTable
+    </div>
+  </div>
+  </div>
+
+ </header>
+
+    
+
+    <!-- /* ----------------------------------------
+ ============= main start here  ==============
+ -------------------------------------------*/  -->
+ <main >
+  
+
+  <section id="faq">
+    <h2>FAQ</h2>
+    <div class="faq-container">
+        <div class="faq-content">
+            <h5>What are your service hours?</h5>
+            <p>Our service starts at 12:00 PM.</p>
+        </div>
+        <div class="faq-content">
+            <h5>Do you accept children?</h5>
+            <p>We regret to inform you that our establishment cannot accommodate children under the age of 12 after 7:00 PM.</p>
+        </div>
+        <div class="faq-content">
+            <h5>What is your dress code?</h5>
+            <p>Our dress code is Smart Casual. Please refrain from wearing shorts, flip-flops, and tracksuits.</p>
+        </div>
+        <div class="faq-content">
+            <h5>How can I inform you about my food allergies?</h5>
+            <p>Inform us of any food allergies during reservation or in the comments section.</p>
+        </div>
+    </div>
+  </section>
+
+  <div id="map">
+    <a href="https://maps.app.goo.gl/2Kb4g8NiXFbAJKa4A" class="menu-btn foot-btn">
+      <i class="ri-subtract-line"></i>
+      <i class="ri-arrow-right-line"></i>
+      <p>maps</p>
+    </a>
+
+  </div>
+  <div id="more-info">
+    <a href="contact.html" class="menu-btn foot-btn">
+      <i class="ri-subtract-line"></i>
+      <i class="ri-arrow-right-line"></i>
+      <p>more info</p>
+    </a> 
+  </div>
+  <div id="foot-social">
+    <a href="https://www.instagram.com/"><i class="ri-instagram-fill"></i></a>
+   <a href="https://wa.me/+8801914738110"><i class="ri-whatsapp-fill"></i></a>
+
+ </div> 
+
+
+ </main>
+ <!-- /* ----------------------------------------
+ ============= footer start here  ==============
+ -------------------------------------------*/  -->
+ <footer>
+  <div class="foot-logo">
+    <img src="assests/footerlogo.png" alt="">
+  </div>
+
+  <div class="footer-container">
+    <div class="footer-card">
+      <h4> location</h4>
+      <p >2715 Ash Dr. San Jose</p>
+      <p>+1(239) 000-0000</p>
+
+    </div>
+    <div class="footer-card">
+      <h4> OPENING HOURS</h4>
+      <p >Saturday-Sunday: 12am - 11pm</p>
+      <p>Happy Hour: 3pm - 5pm</p>
+
+      
+
+    </div>
+    <div class="footer-card">
+      <p>Service is not just a duty; it's our passion. Your satisfaction is our unwavering mission.</p>
+      
+
+    </div>
+  </div>
+   
+
+ </footer>
+    
+
+ <script src="jsFile/main.js"></script>
+</body>
+</html>

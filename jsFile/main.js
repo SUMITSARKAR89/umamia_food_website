@@ -14,3 +14,16 @@ insImgCard.forEach(card => {
 
 
 
+  window.onload = function () {
+    const newDate = new Date();
+
+   
+    const date = newDate.toISOString().split('T')[0];
+    document.getElementById('date').value = date;
+
+   
+    const hours = newDate.getHours().toString().padStart(2, '0');
+    const minutes = newDate.getMinutes().toString().padStart(2, '0');
+    const time = `${hours}:${minutes}`;
+    document.getElementById('time').value = time;
+  };
