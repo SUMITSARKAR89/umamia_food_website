@@ -1,0 +1,14 @@
+:root{
+    --font-20px : 20px;
+    --font-18px : 18px;
+    --font-24px : 24px;
+    --font-h1: 80px;
+    --font-h3: 56px;
+    --font-h2: 64px;
+    --font-h4: 48px;
+    --font-h5: 24px;
+}
+
+@media(max-width:1400px){
+   
+}
